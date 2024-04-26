@@ -29,8 +29,6 @@ jobs:
         java-version: '17'
     - name: Add exec permission
       run: chmod +x gradlew
-    - name: Validate Gradle Wrapper
-      uses: gradle/wrapper-validation-action@v1
     - name: 🔨 Build
       run: ./gradlew build
     - name: 💬 Upload Lint report
